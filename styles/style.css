@@ -1,7 +1,44 @@
-a {
-color: blue;
+charset "UTF-8";
+
+
+body {
+    text-align:center;
+    background-color:#ddecff;
+    color:#000000;
 }
 
-p {
-color: black;
+a {
+    color: blue;
 }
+    
+p {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    /*font-family: sans-serif;*/
+    font-size:16pt;
+    color: black;
+}
+
+span{
+    font-family: sans-serif;
+    font-size: "4";
+    color:black; 
+}
+
+.mincho {
+    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    font-size:18pt;
+    color:black; 
+}
+
+.title1 {
+    font-family:serif;
+    font-size:24pt;
+    color:#000000;
+}
+
+.title2 {
+    font-family:serif;
+    font-size:16pt;
+    color:blue;
+}
+
