@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-
 body {
     text-align:center;
     background-color:#ddecff;
@@ -18,8 +17,7 @@ p {
 }
 
 div {
-    font-size:8pt;
-    color: black;
+    font-size:9pt;
 }
 
 .mincho {
