@@ -17,6 +17,10 @@ p {
     color: black;
 }
 
+div {
+    font-size:8pt;
+}
+
 .mincho {
     font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     font-size:18pt;
