@@ -306,9 +306,8 @@
     <font size="3"> （いずれもPDFファイルです。 原著確認の上自己責任で） </font>
     <br>
     <br>
-    アクセス :　 <span id="time"></span>
-    <br>
-    <br>
+    アクセス :　  <span id="time"></span>
+    
     <script>
       'use strict';
       const now = new Date();
@@ -317,7 +316,8 @@
       const date = now.getDate();
       const hour = now.getHours();
       const min = now.getMinutes();
-      const output = `${year}/${month + 1}/${date}   ${hour}:${min}`; 
+      const sec = now.getSeconds();
+      const output = `${year}/${month + 1}/${date} 　${hour}:${min}:${sec}`; 
 
       document.getElementById('time').textContent = output;  
     </Script> 
