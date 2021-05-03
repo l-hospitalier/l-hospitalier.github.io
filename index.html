@@ -317,9 +317,9 @@
       const hour = now.getHours();
       const min = now.getMinutes();
       const sec = now.getSeconds();
-      const output = `${year}/${month + 1}/${date} 　${hour}:${min}:${sec}`; 
+      const output = `${year}年${month + 1}月${date}日　${hour}:${min}:${sec}`; 
 
-      document.getElementById('time').textContent = output;  
+      document.getElementById('time').textContent = output + '　JST';  
     </Script> 
   </body>
 </html>
