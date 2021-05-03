@@ -12,7 +12,7 @@
       <br> 
        url:<a class="title2"; href="https://l-hospitalier.github.io.">https://l-hospitalier.github.io</a>
       <br>
-    　<p class="mincho";> 近　況</p>
+    　<p id="mincho";> 近　況</p>
       <br>
       <img alt="" src="index.files/image005.jpg" height="580" width="774" border="0">
       <br>
@@ -313,13 +313,19 @@
     <font size="3"> （いずれもPDFファイルです。 原著確認の上自己責任で） </font>
     <br>
     <br>
-    <section>
-      <div id="DateTime">日時表示</div> 
-    </section>
+    アクセス :　 <span id="time"></span>
+    
     <script>
       'use strict';
-      document.getElementById('DateTime').textContent = new Date;
-      /*window.alert('OK');*/
+      const now = new Date();
+      const year = now.getFullYear();
+      const month = now.getMonth();
+      const date = now.getDate();
+      const hour = now.getHours();
+      const min = now.getMinutes();
+      const output = `${year}/${month + 1}/${date}   ${hour}:${min}`; 
+
+      document.getElementById('time').textContent = output;  
     </Script> 
-   </body>
+  </body>
 </html>
