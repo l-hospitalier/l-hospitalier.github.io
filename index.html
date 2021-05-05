@@ -300,14 +300,14 @@
           <a href="284.pdf" target="_search">284</a>,
           <a href="285.pdf" target="_search">285</a>,
           <a href="286.pdf" target="_search">286</a>,
-          <a href="287.pdf" target="_search">287</a>,
+          <a href="287.pdf" target="_search">287</a>
     </font> 
     <br>
     <br>
     <font size="3"> （いずれもPDFファイルです。 原著確認の上自己責任で） </font>
     <br>
     <br>
-    アクセス :　  <span id="time"></span>
+    アクセス　:　 <span id="time"></span>
     
     <script>
       'use strict';
@@ -315,12 +315,19 @@
       const year = now.getFullYear();
       const month = now.getMonth();
       const date = now.getDate();
-      const hour = now.getHours();
-      const min = now.getMinutes();
-      const sec = now.getSeconds();
-      const output = `${year}/${month + 1}/${date}　${hour}:${min}:${sec}`; 
+      
+      var hour = now.getHours();
+      var min = now.getMinutes();
+      var sec = now.getSeconds();
 
-      document.getElementById('time').textContent = output + '　JST';  
+      var hour1 = String(hour).padStart(2,'0');
+      var min1 = String(min).padStart(2, '0');
+      var sec1 = String(sec).padStart(2, "0"); 
+
+      const output = `${year}/${month + 1}/${date}`;
+
+      document.getElementById('time').textContent = output + '　' + hour1 + ':' + min1 + ':' + sec1 + '　JST';  
+
     </Script> 
   </body>
 </html>
